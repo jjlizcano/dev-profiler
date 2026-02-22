@@ -29,7 +29,7 @@ class QuizBloc extends Bloc<QuizEvent, QuizState> {
       emit(QuizInProgress(
         questions: questions,
         currentIndex: 0,
-        answers: {},
+        answers: const {},
       ));
     } catch (e) {
       emit(QuizError(e.toString()));
